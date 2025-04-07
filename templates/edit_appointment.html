@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Appointment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h2>Edit Appointment</h2>
+
+    <form method="POST" action="{{ url_for('update_appointment') }}">
+
+
+            <input type="hidden" name="index" value="{{ index }}">
+
+            <label>Name</label>
+            <input type="text" name="name" value="{{ appointment.name }}" required><br>
+
+            <label>Date</label>
+            <input type="date" name="date" value="{{ appointment.date }}" required><br>
+
+            <label>Time</label>
+            <input type="time" name="time" value="{{ appointment.time }}" required><br>
+
+            <label>Purpose</label>
+            <textarea name="purpose" rows="3" required>{{ appointment.purpose }}</textarea>
+
+            <button type="submit">Update Appointment</button>
+
+
+            <a href="{{ url_for('appointment_page') }}" class="cancel-link">Cancel</a>
+
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f4f8;
+    padding: 30px;
+    max-width: 850px;
+    margin: auto;
+    color: black;
+}
+
+h2, h3 {
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+
+input, textarea, button {
+    width: 80%;
+    padding: 12px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #2D3319;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.log_out{
+    position: absolute;
+    right: 100px;
+    background-color: #EA3546;
+    padding: 6px;
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+}
+
+.logout{
+    color: white;
+}
+
+button {
+    background-color: #78C0E0;
+    color: black;
+    border: none;
+    transition: background 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+button:hover {
+    background-color: #192BC2;
+    color: white;
+}
+
+button.delete {
+    background-color: #FE4A49;
+    color: white;
+
+}
+
+button.delete:hover {
+    background-color: #686963;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+}
+
+th, td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+
+}
+
+.action-form {
+    display: inline;
+    padding: 0;
+
+}
+
+.cancel-link {
+    display: inline-block;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #007BFF;
+
+}
+
+.cancel-link:hover {
+    text-decoration: underline;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
