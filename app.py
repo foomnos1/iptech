@@ -32,7 +32,7 @@ def appointment_page():
 @app.route('/edit', methods=['POST'])
 def edit_page():
     index = int(request.form.get('index'))
-    if 0 <= index < len(appointments):  #I dunno what the use of dis is, but it works
+    if 0 <= index < len(appointments): 
         return render_template('edit_appointment.html', appointment=appointments[index], index=index)
     return "Appointment not found", 404
 
